@@ -1,0 +1,7 @@
+Alright, so I want to make a website that I can use to randomize a team of Operators to try and use in my current favorite mobil game, Arknights.
+
+To do this, I want to have a section for the user to input numbers totaling to 12 next to the following titles:  Vanguard, Guard, Sniper, Defender, Medic, Supporter, Caster, and Specialist
+Followed by a 'Randomize my team' button.
+
+Upon pressing this button I would like for the code to select, at random, Operators from the respective lists, and display their names and e2(Elite 2, a term from the game) art on the page.
+
