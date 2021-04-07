@@ -5,9 +5,6 @@ const init = () => {
 
     const testerPresser = document.getElementById(`randomizeTest`);
 
-    // window.onload = () => {
-    //     randomOperator();
-    // }
     testerPresser.addEventListener(`click`, function() {
         randomOperator();
     });
