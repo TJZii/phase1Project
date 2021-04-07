@@ -5,3 +5,12 @@ Followed by a 'Randomize my team' button.
 
 Upon pressing this button I would like for the code to select, at random, Operators from the respective lists, and display their names and e2(Elite 2, a term from the game) art on the page.
 
+the biggest challenge is locating an API that I am able to use for this.  I may just create my own in the end.
+
+
+
+UPDATE:   Due to the difficulty of randomly selecting from specific classes, I will instead be selecting 1 absolutely random operator at a time and will work upwards from there.
+
+UPDATE_2:  Alright, I managed to get it to select a random operator and display several stats about that operator.
+Now I need to make a way for it to take that information and let the user 'add that operator to their team'.
+After I accomplish that, and limit the team to a max of 12 operators, then I will work on formatting.
