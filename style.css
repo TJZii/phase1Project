@@ -1,0 +1,30 @@
+body {
+    margin: 1% 5%;
+    background-color: rgb(187, 184, 184);
+}
+
+div#opData {
+    max-width: 40%;
+    height: auto;
+    float: left;
+}
+
+button#randomizeTest {
+    float: left;
+}
+
+img#artwork {
+    max-width: 50%;
+    height: auto;
+    float: right;
+}
+
+img#classIcon {
+    height: 40%;
+    width: 40%;
+}
+
+img#factionIcon {
+    height: 40%;
+    width: 40%;
+}
