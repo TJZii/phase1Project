@@ -28,3 +28,17 @@ img#factionIcon {
     height: 40%;
     width: 40%;
 }
+
+ul#squad {
+    list-style-type: none;
+}
+
+ul#squad > img {
+    height: 5%;
+    width: 5%;
+    text-align: center;
+}
+
+ul#squad > li {
+    text-align: center;
+}
