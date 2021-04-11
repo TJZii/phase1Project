@@ -65,82 +65,84 @@ const init = () => {
     }
 
     function classIconSwapper(classChoice){
-        if(classChoice == "Vanguard"){
-            document.getElementById(`classIcon`).src = `https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/classes/vanguard.png`;
-            document.getElementById(`classIcon`).alt = `Vanguard`;
-            return;
-        } else if(classChoice == "Sniper"){
-            document.getElementById(`classIcon`).src = `https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/classes/sniper.png`;
-            document.getElementById(`classIcon`).alt = `Sniper`;
-            return;
-        } else if(classChoice == "Medic"){
-            document.getElementById(`classIcon`).src = `https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/classes/medic.png`;
-            document.getElementById(`classIcon`).alt = `Medic`;
-            return;
-        } else if(classChoice == "Caster"){
-            document.getElementById(`classIcon`).src = `https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/classes/caster.png`;
-            document.getElementById(`classIcon`).alt = `Caster`;
-            return;
-        } else if(classChoice == "Guard"){
-            document.getElementById(`classIcon`).src = `https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/classes/guard.png`;
-            document.getElementById(`classIcon`).alt = `Guard`;
-            return;
-        } else if(classChoice == "Defender"){
-            document.getElementById(`classIcon`).src = `https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/classes/defender.png`;
-            document.getElementById(`classIcon`).alt = `Defender`;
-            return;
-        } else if(classChoice == "Supporter"){
-            document.getElementById(`classIcon`).src = `https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/classes/supporter.png`;
-            document.getElementById(`classIcon`).alt = `Supporter`;
-            return;
-        } else if(classChoice == "Specialist"){
-            document.getElementById(`classIcon`).src = `https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/classes/specialist.png`;
-            document.getElementById(`classIcon`).alt = `Specialist`;
-            return;
-        } else {
-            return `Lies!`;
+        switch(classChoice){
+            case "Vanguard":
+                document.getElementById(`classIcon`).src = `https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/classes/vanguard.png`;
+                document.getElementById(`classIcon`).alt = `Vanguard`;
+                return;
+            case "Sniper":
+                document.getElementById(`classIcon`).src = `https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/classes/sniper.png`;
+                document.getElementById(`classIcon`).alt = `Sniper`;
+                return;
+            case "Medic":
+                document.getElementById(`classIcon`).src = `https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/classes/medic.png`;
+                document.getElementById(`classIcon`).alt = `Medic`;
+                return;
+            case "Caster":
+                document.getElementById(`classIcon`).src = `https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/classes/caster.png`;
+                document.getElementById(`classIcon`).alt = `Caster`;
+                return;
+            case "Guard":
+                document.getElementById(`classIcon`).src = `https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/classes/guard.png`;
+                document.getElementById(`classIcon`).alt = `Guard`;
+                return;
+            case "Defender":
+                document.getElementById(`classIcon`).src = `https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/classes/defender.png`;
+                document.getElementById(`classIcon`).alt = `Defender`;
+                return;
+            case "Supporter":
+                document.getElementById(`classIcon`).src = `https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/classes/supporter.png`;
+                document.getElementById(`classIcon`).alt = `Supporter`;
+                return;
+            case "Specialist":
+                document.getElementById(`classIcon`).src = `https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/classes/specialist.png`;
+                document.getElementById(`classIcon`).alt = `Specialist`;
+                return;
+            default:
+                return `Lies!`;
         }
     }
 
     function factionIconSwapper(faction) {
-        if(faction == `BlackSteel`){
-            document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/blacksteel.png";
-            return;
-        } else if(faction == `Great Lungmen`){
-            document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/great-lungmen.png";
-            return;
-        } else if(faction == `Kjerag`){
-            document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/kjerag.png";
-            return;
-        } else if(faction == `Laterano`){
-            document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/laterano.png";
-            return;
-        } else if(faction == `Leithanian`){
-            document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/leithanian.png";
-            return;
-        } else if(faction == `Penguin Logistics`){
-            document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/penguin-logistics.png";
-            return;
-        } else if(faction == `Rhine Lab`){
-            document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/rhine-lab.png";
-            return;
-        } else if(faction == `Rhodes Island`){
-            document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/rhodes-island.png";
-            return;
-        } else if(faction == `RIM Billiton`){
-            document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/rim-billiton.png";
-            return;
-        } else if(faction == `Ursus`){
-            document.getElementById(`factionIcon`).src =  "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/ursus.png";
-            return;
-        } else if(faction == `Victoria`){
-            document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/victoria.png";
-            return;
-        } else if(faction == `Kazimierz`){
-            document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/kazimierz.png";
-            return;
-        } else {
-            return `Lies!`;
+        switch(faction){
+            case `BlackSteel`:
+                document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/blacksteel.png";
+                return;
+            case `Great Lungmen`:
+                document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/great-lungmen.png";
+                return;
+            case `Kjerag`:
+                document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/kjerag.png";
+                return;
+            case `Laterano`:
+                document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/laterano.png";
+                return;
+            case `Leithanian`:
+                document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/leithanian.png";
+                return;
+            case `Penguin Logistics`:
+                document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/penguin-logistics.png";
+                return;
+            case `Rhine Lab`:
+                document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/rhine-lab.png";
+                return;
+            case `Rhodes Island`:
+                document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/rhodes-island.png";
+                return;
+            case `RIM Billiton`:
+                document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/rim-billiton.png";
+                return;
+            case `Ursus`:
+                document.getElementById(`factionIcon`).src =  "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/ursus.png";
+                return;
+            case `Victoria`:
+                document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/victoria.png";
+                return;
+            case `Kazimierz`:
+                document.getElementById(`factionIcon`).src = "https://raw.githubusercontent.com/sarahjting/arknights-gql/master/public/img/factions/kazimierz.png";
+                return;
+            default:
+                return `Lies!`;
         }
     }
 
