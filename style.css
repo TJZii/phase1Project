@@ -4,9 +4,10 @@ body {
 }
 
 div#opData {
-    max-width: 40%;
-    height: auto;
+    max-width: 30%;
+    height: 100%;
     float: left;
+    margin: 0%;
 }
 
 button#randomizeTest {
@@ -14,33 +15,37 @@ button#randomizeTest {
 }
 
 img#artwork {
-    max-width: 50%;
+    max-width: 45%;
     height: auto;
-    float: right;
+    float: left;
 }
 
 img#classIcon {
-    height: 40%;
-    width: 40%;
+    height: 25%;
+    width: 25%;
 }
 
 img#factionIcon {
-    height: 40%;
-    width: 40%;
+    height: 25%;
+    width: 25%;
 }
 
 ul#squad {
+    margin: auto;
     list-style-type: none;
+    width: 15%;
+    display: inline;
+    height: 100%;
+    float: right;
 }
 
 ul#squad > img {
-    height: 5%;
-    width: 5%;
-    text-align: center;
+    height: 20%;
+    width: 20%;
 }
 
 ul#squad > li {
-    text-align: center;
+    float:inline-start;
 }
 
 ul#squad > button {

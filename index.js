@@ -16,18 +16,15 @@ const init = () => {
 
     squadMaker.addEventListener(`click`, function() {
         if(chosenSquad.includes(document.getElementById(`name`).innerText) == false){
-            chosenSquad.push(document.getElementById(`name`).innerText);
             addToCurrentSquad();
         }
     });
-
     testerPresser.addEventListener(`click`, function() {
         randomOperator();
     });
-
     squadList.addEventListener(`click`, function(buttonPressed){
-        if(buttonPressed.target.id[0] == 'r') {
-            removeFromSquad(buttonPressed.target.id[7]);
+        if(buttonPressed.target.nodeName == `BUTTON`) {
+            removeFromSquad(buttonPressed.target.id);
         }
     });
 
@@ -64,9 +61,10 @@ const init = () => {
 
     function addToCurrentSquad() {
         if(squadTracker < 12){
+            chosenSquad.push(document.getElementById(`name`).innerText);
             document.getElementById(`squad-${squadTracker}`).innerText = document.getElementById(`name`).innerText;
             document.getElementById(`class-${squadTracker}`).src = document.getElementById(`classIcon`).src;
-            document.getElementById(`remove-${squadTracker}`).innerText = `X`;
+            document.getElementById(`${squadTracker}`).innerText = `X`;
             squadTracker += 1;
             console.log(chosenSquad);
         }
@@ -77,11 +75,11 @@ const init = () => {
         for(let thisOne = removerNum; thisOne < 11; thisOne++){
             document.getElementById(`squad-${thisOne}`).innerText = document.getElementById(`squad-${thisOne + 1}`).innerText;
             document.getElementById(`class-${thisOne}`).src = document.getElementById(`class-${thisOne + 1}`).src;
-            document.getElementById(`remove-${thisOne}`).innerText = document.getElementById(`remove-${thisOne + 1}`).innerText;           
+            document.getElementById(`${thisOne}`).innerText = document.getElementById(`${thisOne + 1}`).innerText;           
         }
         document.getElementById(`squad-11`).innerText = "";
         document.getElementById(`class-11`).src = "https://convertingcolors.com/plain-BBB8B8.svg";
-        document.getElementById(`remove-11`).innerText = "";
+        document.getElementById(`11`).innerText = "";
         chosenSquad.splice(removerNum, 1);
         squadTracker -= 1;
         console.log(chosenSquad);
