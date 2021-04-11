@@ -60,6 +60,7 @@ const init = () => {
         if(squadTracker < 12){
             document.getElementById(`squad-${squadTracker}`).innerText = document.getElementById(`name`).innerText;
             document.getElementById(`class-${squadTracker}`).src = document.getElementById(`classIcon`).src;
+            document.getElementById(`remove-${squadTracker}`).innerText = `X`;
             squadTracker += 1;
         }
     }

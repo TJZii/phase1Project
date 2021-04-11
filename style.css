@@ -42,3 +42,10 @@ ul#squad > img {
 ul#squad > li {
     text-align: center;
 }
+
+ul#squad > button {
+    padding: 0;
+    border: none;
+    background: red;
+    color: white;
+}
