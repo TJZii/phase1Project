@@ -114,6 +114,7 @@ ul#squad {
 ul#squad > img {
     height: 50%;
     width: 50%;
+    background-color: black;
 }
 
 ul#squad > li {
