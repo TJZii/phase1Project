@@ -3,6 +3,10 @@ body {
     background-color: rgb(187, 184, 184);
 }
 
+#credits {
+    margin-bottom: 0;
+}
+
 div#opData {
     max-width: 30%;
     height: 100%;
@@ -10,38 +14,106 @@ div#opData {
     margin: 0%;
 }
 
+#detailTitle {
+    margin-bottom: 0;
+}
+
+#codename {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#name {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#classTitle {
+    margin-bottom: 0;
+}
+
+#classIcon {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#class {
+    margin-top: 0;
+}
+
+#raceTitle {
+    margin-bottom: 0;
+}
+
+#race {
+    margin-top: 0;
+}
+
+#factionTitle {
+    margin-bottom: 0;
+}
+
+#factionIcon {
+    margin-bottom: 0;
+}
+
+#faction {
+    margin-top: 0;
+}
+
+#rarityTitle {
+    margin-bottom: 0;
+}
+
+#rarity {
+    margin-top: 0;
+}
+
+#fillSquad {
+    background-color: orangered;
+}
+
+div p#welcome {
+    font-size: small;
+    text-align: center;
+}
+
 button#randomizeTest {
     float: left;
 }
 
 img#artwork {
-    max-width: 45%;
+    max-width: 50%;
     height: auto;
     float: left;
 }
 
 img#classIcon {
-    height: 25%;
-    width: 25%;
+    height: 30%;
+    width: 30%;
+    background-color: black;
+    padding: 1%;
 }
 
 img#factionIcon {
-    height: 25%;
-    width: 25%;
+    height: auto;
+    width: 40%;
+    background-color: rgb(133, 133, 133);
+    padding: 1%;
 }
 
 ul#squad {
     margin: auto;
     list-style-type: none;
     width: 15%;
-    display: inline;
     height: 100%;
     float: right;
+    columns: 3;
 }
 
 ul#squad > img {
-    height: 20%;
-    width: 20%;
+    height: 50%;
+    width: 50%;
 }
 
 ul#squad > li {

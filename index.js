@@ -11,8 +11,9 @@ const init = () => {
     }
 
     const testerPresser = document.getElementById(`randomizeTest`);
-    const squadMaker = document.getElementById('squadAdder');
+    const squadMaker = document.getElementById(`squadAdder`);
     const squadList = document.getElementById(`squad`);
+    const randWholeSquad = document.getElementById(`fillSquad`);
 
     squadMaker.addEventListener(`click`, function() {
         if(chosenSquad.includes(document.getElementById(`name`).innerText) == false){
@@ -25,6 +26,20 @@ const init = () => {
     squadList.addEventListener(`click`, function(buttonPressed){
         if(buttonPressed.target.nodeName == `BUTTON`) {
             removeFromSquad(buttonPressed.target.id);
+        }
+    });
+    randWholeSquad.addEventListener(`click`, function(){
+        let delTimer = 100;
+        let squadLimiter = squadTracker;
+        for(squadLimiter; squadLimiter < 12; squadLimiter++){
+            setTimeout(function() {
+                randomOperator();
+            }, delTimer);
+            delTimer += 100;
+            setTimeout(function() {
+                addToCurrentSquad();
+            }, delTimer);
+            delTimer += 100;
         }
     });
 

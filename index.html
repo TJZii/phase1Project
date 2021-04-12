@@ -13,24 +13,27 @@
 
             <h1>Arknights Squad Randomizer</h1>
             <h4 id='credits'>Credits for the API that I used go to Sarah Ting, who put together an API of Arknights Operators for one of her projects, many thanks!</h4>
+            
 
             
 
             <div class="data" id="opData">
+                <p id="welcome">Welcome to my Arknights Squad Randomizer.  Please see the README if you are not familiar with Arknights, but the buttons below are for randomly selecting one of the operators from the game, and the ability to choose to add them to your squad. Information on each operator is below. Or, if you would just like a random team without all the info, the Fill Squad button will select operators and add them for you, keeping any you already added.</p>
                 <button id="randomizeTest">Choose a Random Operator!</button>
                 <button id="squadAdder">Add to Squad</button>
-                <h2>Operator Details</h2>
+                <button id="fillSquad">Fill Squad</button>
+                <h2 id="detailTitle">Operator Details</h2>
                 
 
-                <h3>   Codename: </h3> <p id="name">___</p>
+                <h3 id="codename">   Codename: </h3> <p id="name">___</p>
 
-                <h3>   Class: </h3> <img id="classIcon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/200px-Question_mark_%28black%29.svg.png" alt="Icon Placeholder"> <p id="class">___</p>
+                <h3 id="classTitle">   Class: </h3> <img id="classIcon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/200px-Question_mark_%28black%29.svg.png" alt="Icon Placeholder"> <p id="class">___</p>
 
-                <h3>   Race: </h3> <p id="race">___</p>
+                <h3 id="raceTitle">   Race: </h3> <p id="race">___</p>
 
-                <h3>   Faction: </h3> <img id="factionIcon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/200px-Question_mark_%28black%29.svg.png"> <p id="faction">___</p>
+                <h3 id="factionTitle">   Faction: </h3> <img id="factionIcon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/200px-Question_mark_%28black%29.svg.png"> <p id="faction">___</p>
                 
-                <h3>   Rarity: </h3> <p id="rarity">___</p>
+                <h3 id="rarityTitle">   Rarity: </h3> <p id="rarity">___</p>
             </div>
 
             <img class="data" id="artwork" src=" ">
@@ -54,6 +57,7 @@
                 <li id="squad-3"></li>
                 <img id="class-3" src="https://convertingcolors.com/plain-BBB8B8.svg">
             </br>
+            </br>
                 <button id="4" class="remover"></button>
                 <li id="squad-4"></li>
                 <img id="class-4" src="https://convertingcolors.com/plain-BBB8B8.svg">
@@ -69,6 +73,7 @@
                 <button id="7" class="remover"></button>
                 <li id="squad-7"></li>
                 <img id="class-7" src="https://convertingcolors.com/plain-BBB8B8.svg">
+            </br>
             </br>
                 <button id="8" class="remover"></button>
                 <li id="squad-8"></li>
